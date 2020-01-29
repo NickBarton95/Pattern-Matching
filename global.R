@@ -31,7 +31,7 @@ library(Hmisc)
 library(ANN2)
 library(shinyjs)
 #library("V8")
-library("dashboardthemes")
+#library("dashboardthemes")
 library(MLmetrics)
 library(shinycssloaders)
 library(shinyMatrix)
@@ -60,14 +60,14 @@ colnames(data) = c("Date Time", "Gas Flow", "Headspace Pressure", "Level", "Mixe
                    "Temperature ROC", "Power Output ROC", "Digester Feed Flowrate ROC", "Feed Pump Pressure ROC", 
                    "Pasteuriser Pump Pressure ROC", "FoamAssoc")
 
-title.logo = shinyDashboardLogoDIY(
-  boldText = "Pattern",
-  mainText = "Search", 
-  textSize = 20,
-  badgeBackColor = "#40E0D0",
-  badgeTextColor = "white",
-  badgeText = "v1"
-)
+# title.logo = shinyDashboardLogoDIY(
+#   boldText = "Pattern",
+#   mainText = "Search", 
+#   textSize = 20,
+#   badgeBackColor = "#40E0D0",
+#   badgeTextColor = "white",
+#   badgeText = "v1"
+# )
 
 jscode <- "
 shinyjs.collapse = function(boxid) {

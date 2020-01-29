@@ -1,5 +1,5 @@
 # header ####
-header = dashboardHeader(title = title.logo)
+header = dashboardHeader(title = "Pattern Matching")
 # sidebar ####
 sidebar = dashboardSidebar(
   sidebarMenu(
@@ -15,7 +15,12 @@ sidebar = dashboardSidebar(
 body = dashboardBody(
 
   extendShinyjs(text = jscode),
-  shinyDashboardThemes(theme = "poor_mans_flatly"),
+  
+  tags$head(
+    tags$link(rel = "stylesheet", type = "text/css", href = "theme.css")
+  ),
+  
+  #shinyDashboardThemes(theme = "poor_mans_flatly"),
   
   tabItems(
     tabItem(
